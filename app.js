@@ -1,7 +1,7 @@
 import express from 'express'
 
 const app = express()
-port = process.env.PORT || 80
+let port = process.env.PORT || 80
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
