@@ -6,12 +6,13 @@ const app = express();
 const port = process.env.PORT || 80
 const botToken = process.env.BOT_TOKEN
 
+app.use('/static', express.static('public'))
 
 app.get('/', (req, res) => {
   //Check initData
 
   //Return UI
-  res.send(req)
+  res.sendFile('index.html')
 })
 
 app.listen(port, () => {

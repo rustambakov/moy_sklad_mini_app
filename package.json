@@ -13,5 +13,8 @@
     "crypto": "^1.0.1",
     "express": "^4.19.2",
     "grammy": "^1.26.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }
