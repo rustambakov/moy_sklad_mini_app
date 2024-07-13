@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini App</title>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-</head>
-<body>
-    Hello world
-    <script>
-        console.log(window.Telegram.WebApp.initData)
-    </script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mini App</title>
+        <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    </head>
+
+    <body>
+        <script>
+
+            fetch("https://moy-sklad-mini-app-2b5c184770aa.herokuapp.com/api/check_hash?init_data=" + window.Telegram.WebApp.initData)
+        </script>
+        Hello World!
+    </body>
+
 </html>

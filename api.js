@@ -14,6 +14,13 @@ app.get('/', (req, res) => {
   res.sendFile('index.html', { root: '.' })
 })
 
+app.get('/api/check_hash', (req, res) => {
+
+  //Get init data
+  console.log(req.query.init_data)
+ 
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
