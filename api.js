@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
   //Check initData
 
   //Return UI
-  res.sendFile('index.html')
+  res.sendFile('index.html', { root: '.' })
 })
 
 app.listen(port, () => {
