@@ -9,9 +9,7 @@ const botToken = process.env.BOT_TOKEN
 app.use('/static', express.static('public'))
 
 app.get('/', (req, res) => {
-    //Request
-    console.log(req)
-    
+
   //Return UI
   res.sendFile('index.html', { root: '.' })
 })
