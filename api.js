@@ -12,8 +12,6 @@ app.get('/', (req, res) => {
     //Request
     console.log(req)
     
-  //Check initData
-  console.log(window.Telegram.WebApp)
   //Return UI
   res.sendFile('index.html', { root: '.' })
 })
