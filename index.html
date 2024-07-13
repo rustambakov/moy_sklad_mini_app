@@ -11,6 +11,9 @@
         <script>
 
             fetch("https://moy-sklad-mini-app-2b5c184770aa.herokuapp.com/api/check_hash?init_data=" + window.Telegram.WebApp.initData)
+            .then((resp)=>{
+                console.log(resp)
+            });
         </script>
         Hello World!
     </body>

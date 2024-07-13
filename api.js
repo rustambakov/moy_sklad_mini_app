@@ -17,6 +17,7 @@ app.get('/', (req, res) => {
 app.get('/api/check_hash', (req, res) => {
 
   //Get init data
+  console.log('Init data:')
   console.log(req.query.init_data)
   res.send('Init data received!');
  
